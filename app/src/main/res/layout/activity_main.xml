@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Google Map Fragment -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Autocomplete Fragment -->
+    <fragment
+        android:id="@+id/autocomplete_fragment"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ImageButton
+        android:id="@+id/voiceButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circular_button_background"
+        android:src="@drawable/microphone"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp"
+        android:drawablePadding="8dp" />
+
+    <TextView
+        android:id="@+id/availableSlots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:padding="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp"
+        android:drawablePadding="8dp" />
+
+    <ImageButton
+        android:id="@+id/searchStreet"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circular_button_background"
+        android:src="@drawable/cemetery"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="60dp"
+        android:scaleType="centerInside"/>
+
+    <ImageButton
+        android:id="@+id/demoButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circular_button_background"
+        android:src="@drawable/demo"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="120dp"
+        android:scaleType="centerInside"/>
+
+    <ImageButton
+        android:id="@+id/getDirections"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circular_button_background"
+        android:src="@drawable/direction"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="180dp"
+        android:scaleType="centerInside"/>
+
+</RelativeLayout>
